@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const api = axios.create({ baseURL: "https://leadflow-crm-xryh.onrender.com/api" });
+const api = axios.create({ baseURL: "/api" });
 
 api.interceptors.request.use((cfg) => {
   const token = localStorage.getItem("crm_token");
